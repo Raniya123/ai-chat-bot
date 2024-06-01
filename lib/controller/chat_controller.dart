@@ -39,7 +39,7 @@ class ChatController extends GetxController {
     await gemini
         .text(messageText)
         .then((value) => geminiRsp.value = value!.output ?? "No responce")
-        .catchError((e) => print(e));
+        .catchError((e) => throw e);
     return geminiRsp.value;
   }
 }

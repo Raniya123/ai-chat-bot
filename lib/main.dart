@@ -1,4 +1,3 @@
-import 'package:ai_chat_bot/controller/chat_controller.dart';
 import 'package:ai_chat_bot/controller/theme_controller.dart';
 import 'package:ai_chat_bot/view/home_view.dart';
 import 'package:flutter/material.dart';
