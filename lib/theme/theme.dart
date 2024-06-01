@@ -27,6 +27,7 @@ class AppThemes {
 
   static AppBar mainAppBar(String title) {
     return AppBar(
+      scrolledUnderElevation: 0,
       backgroundColor: AppThemes.headerBgColor,
       centerTitle: false,
       title: Text(title),

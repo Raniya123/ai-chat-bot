@@ -107,6 +107,7 @@ class HomeView extends StatelessWidget {
                               padding:
                                   const EdgeInsets.symmetric(vertical: 8.0),
                               child: MarkdownBody(
+                                selectable: true,
                                 data: _chat.messages[index].body,
                               ),
                             )
