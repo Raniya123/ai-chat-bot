@@ -30,4 +30,6 @@ To get started with the AI Chatbot app, follow these steps:
 
 ## Feedback
 
-We welcome your fe
+We welcome your feedback and suggestions for improving the AI Chatbot app. If you have any questions, comments, or concerns, please feel free to contact us.
+
+Thank you for using the AI Chatbot app!
