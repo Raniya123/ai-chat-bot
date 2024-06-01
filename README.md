@@ -1,16 +1,33 @@
-# ai_chat_bot
+# AI Chatbot Powered by Gemini API
 
-A new Flutter project.
+Welcome to the AI Chatbot app powered by the Gemini API! This app allows you to interact with an AI chatbot to get responses to your queries.
+
+## Features
+
+- **Interactive Chat Interface**: You can type messages in the chat interface and receive responses from the AI chatbot.
+- **Gemini API Integration**: The app is integrated with the Gemini API, which provides intelligent responses to user queries.
+- **Real-time Communication**: Messages are sent and received in real-time, providing a seamless chat experience.
+- **User-friendly Interface**: The app provides a user-friendly interface for easy interaction with the chatbot.
+
+## How to Use
+
+1. **Enter Text**: Type your message in the text input field labeled "Enter text".
+2. **Send Message**: Tap on the "ADD" button to send your message to the chatbot.
+3. **Receive Response**: The chatbot will process your message and provide a response in the chat interface.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with the AI Chatbot app, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. **Install the App**: Download and install the AI Chatbot app from the app store on your device.
+2. **Open the App**: Launch the app from your device's home screen.
+3. **Start Chatting**: Begin chatting with the AI chatbot by typing your messages and sending them using the "ADD" button.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Privacy Policy
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Data Privacy**: Your messages are processed anonymously and securely. We do not store any personal information or chat history.
+- **Gemini API**: The Gemini API is used to provide intelligent responses to user queries. Your messages may be processed by the Gemini API to generate accurate responses.
+
+## Feedback
+
+We welcome your fe
