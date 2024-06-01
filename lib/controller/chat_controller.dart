@@ -23,6 +23,7 @@ class ChatController extends GetxController {
   Future<void> sendMessageToGemini(
       String senderName, String messageText) async {
     isLoading.value = true;
+    userChatController.clear();
     // Add the user's message
     addMessage(senderName, messageText);
 

@@ -10,7 +10,7 @@ import 'package:lottie/lottie.dart';
 class HomeView extends StatelessWidget {
   HomeView({super.key});
   final _chat = Get.put(ChatController());
-  @override
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,20 +27,23 @@ class HomeView extends StatelessWidget {
                 border: Border.all(color: Colors.black),
               ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Expanded(
                     flex: 5,
-                    child: TextField(
-                      controller: _chat.userChatController,
-                      onChanged: (value) {
-                        if (kDebugMode) {
-                          print(value);
-                        }
-                      },
-                      decoration: const InputDecoration(
-                        floatingLabelBehavior: FloatingLabelBehavior.never,
-                        border: InputBorder.none,
-                        labelText: 'Enter text',
+                    child: Center(
+                      child: TextField(
+                        controller: _chat.userChatController,
+                        onChanged: (value) {
+                          if (kDebugMode) {
+                            print(value);
+                          }
+                        },
+                        decoration: const InputDecoration(
+                          floatingLabelBehavior: FloatingLabelBehavior.never,
+                          border: InputBorder.none,
+                          labelText: 'Enter text',
+                        ),
                       ),
                     ),
                   ),
