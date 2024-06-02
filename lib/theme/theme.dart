@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppThemes {
   static Color headerBgColor = Colors.white;
+  static double margin = 10.0;
   static Color greenColor = const Color(0xFF69B409);
   static Color orgColor = const Color(0xFFFF9900);
   static final ThemeData lightTheme = ThemeData(

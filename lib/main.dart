@@ -1,11 +1,12 @@
+import 'package:ai_chat_bot/config.dart';
 import 'package:ai_chat_bot/controller/theme_controller.dart';
-import 'package:ai_chat_bot/view/home_view.dart';
+import 'package:ai_chat_bot/view/home/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
 import 'package:get/get.dart';
 
 void main() {
-  Gemini.init(apiKey: 'AIzaSyDvCHXHHWiC2xYVBYRKHuKZtVX_TFMLxGE');
+  Gemini.init(apiKey: Config.apiToken);
   runApp(MyApp());
 }
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return Obx(() {
       return GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'AI CHATBOT',
+        title: Config.appName,
         theme: themeController.lightTheme,
         darkTheme: themeController.darkTheme,
         themeMode: themeController.themeMode,
