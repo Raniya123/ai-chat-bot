@@ -1,3 +1,4 @@
+import 'package:ai_chat_bot/config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gemini/flutter_gemini.dart';
@@ -35,7 +36,7 @@ class ChatController extends GetxController {
       final responseText = await getGeminiResponse(messageText);
 
       // Add Gemini AI's response
-      addMessage('Gemini AI', responseText);
+      addMessage(Config.aiSender, responseText);
     } catch (e) {
       // Handle errors gracefully
       if (kDebugMode) {

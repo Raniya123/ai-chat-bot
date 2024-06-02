@@ -10,7 +10,7 @@ class ChatInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
+      padding: EdgeInsets.symmetric(horizontal: AppThemes.margin),
       decoration: BoxDecoration(
         color: Colors.white,
         border: Border.all(color: Colors.black),
@@ -20,19 +20,20 @@ class ChatInput extends StatelessWidget {
         children: [
           Expanded(
             flex: 5,
-            child: Center(
-              child: TextField(
-                controller: chatController.userChatController,
-                onChanged: (value) {
-                  if (kDebugMode) {
-                    print(value);
-                  }
-                },
-                decoration: const InputDecoration(
-                  floatingLabelBehavior: FloatingLabelBehavior.never,
-                  border: InputBorder.none,
-                  labelText: 'Enter text',
-                ),
+            child: TextField(
+              scrollPadding: const EdgeInsets.all(0),
+              maxLines: 2,
+              controller: chatController.userChatController,
+              onChanged: (value) {
+                if (kDebugMode) {
+                  print(value);
+                }
+              },
+              decoration: const InputDecoration(
+                contentPadding: EdgeInsets.zero,
+                floatingLabelBehavior: FloatingLabelBehavior.never,
+                border: InputBorder.none,
+                labelText: 'Enter text',
               ),
             ),
           ),
@@ -43,7 +44,7 @@ class ChatInput extends StatelessWidget {
                     "me", chatController.userChatController.text);
               },
               child: Container(
-                padding: const EdgeInsets.all(10),
+                padding: EdgeInsets.all(AppThemes.margin),
                 decoration: BoxDecoration(
                   color: AppThemes.greenColor.withOpacity(0.6),
                   border: Border.all(color: Colors.black),

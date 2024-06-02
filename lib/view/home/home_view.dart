@@ -1,3 +1,4 @@
+import 'package:ai_chat_bot/config.dart';
 import 'package:ai_chat_bot/view/home/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,7 +18,7 @@ class HomeView extends StatelessWidget {
       bottom: true,
       top: false,
       child: Scaffold(
-        appBar: AppThemes.mainAppBar("AI - CHATBOT"),
+        appBar: AppThemes.mainAppBar(Config.appName),
         body: Container(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           child: Column(

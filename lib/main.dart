@@ -16,15 +16,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Obx(() {
-      return GetMaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: Config.appName,
-        theme: themeController.lightTheme,
-        darkTheme: themeController.darkTheme,
-        themeMode: themeController.themeMode,
-        home: HomeView(),
-      );
-    });
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: Config.appName,
+      theme: themeController.lightTheme,
+      darkTheme: themeController.darkTheme,
+      themeMode: themeController.themeMode,
+      home: HomeView(),
+    );
   }
 }
